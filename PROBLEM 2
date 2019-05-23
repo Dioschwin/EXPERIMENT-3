@@ -1,0 +1,49 @@
+// Sumo, Dioschwin N.
+// Section 1-12
+
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+	int provA[7], provB[7], provC[7];	
+	cout<<"Enter all temperatures for a week of Province A, Province B and Province C."<<endl<<endl;
+	
+	for(int ctr=0;ctr<7;ctr++)
+	{
+		cout<<"Province A, Day "<<ctr+1<<": ";
+		cin>>provA[ctr];
+	}
+	
+	for(int ctr=0;ctr<7;ctr++)
+	{
+		cout<<"Province B, Day "<<ctr+1<<": ";
+		cin>>provB[ctr];
+	}
+	
+	for(int ctr=0;ctr<7;ctr++)
+	{
+		cout<<"Province C, Day "<<ctr+1<<": ";
+		cin>>provC[ctr];
+	}
+	
+	
+	cout<<"\n\nDisplaying Values: "<<endl;
+	for(int ctr=0;ctr<7;ctr++)
+	{
+		cout<<"Province A, Day "<<ctr+1<<" = "<<provA[ctr]<<endl;
+	}
+	
+	for(int ctr=0;ctr<7;ctr++)
+	{
+		cout<<"Province B, Day "<<ctr+1<<" = "<<provB[ctr]<<endl;
+	}
+	
+	for(int ctr=0;ctr<7;ctr++)
+	{
+		cout<<"Province C, Day "<<ctr+1<<" = "<<provC[ctr]<<endl;
+	}
+
+	return 0;	
+}
