@@ -1,0 +1,32 @@
+// Sumo, Dioschwin N.
+// Section 1-12
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	int size;
+	
+	cout<<"Enter array size : ";
+	cin>>size;
+	
+	char array[size];
+	char temp[size];
+	
+	cout<<"Enter word: ";
+	cin>>array;
+	
+	cout<<"\nReversed order: ";	
+	for (int i = size; i > -1; i--)
+	{
+		char temp = array[i];
+		array[i] = temp;
+		cout<<array[i];
+	}
+	
+	cout<<"\nThe size of the array is: "<<size;
+	
+	return 0;
+}
